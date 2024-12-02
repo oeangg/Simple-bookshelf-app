@@ -1,0 +1,120 @@
+body {
+  max-width: 860px;
+  background-color: azure;
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
+  margin: auto;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  background-color: #444;
+}
+
+button {
+  padding-inline: 10px;
+  padding-block: 7px;
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: 2px solid #444;
+  color: #444;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+input {
+  padding-inline: 10px;
+  padding-block: 5px;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+input:focus {
+  outline: 1px solid #444;
+}
+
+header h1 {
+  color: azure;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: auto;
+}
+
+main section {
+  padding-inline: 60px;
+  padding-block: 20px;
+}
+
+.tambahBuku form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tambahBuku form div {
+  display: flex;
+}
+
+.tambahBuku form div:nth-child(4) {
+  width: 50%;
+}
+
+.tambahBuku form div label {
+  flex: 1;
+}
+.tambahBuku form div input {
+  flex: 2;
+}
+
+.tambahBuku .buttonSubmit {
+  display: flex;
+  justify-content: end;
+}
+
+.cariBuku form {
+  display: flex;
+  gap: 10px;
+}
+
+.cariBuku form input {
+  flex: 1;
+}
+
+.isCompleteButton {
+  display: flex;
+  gap: 10px;
+}
+
+#incompleteBookList {
+  background-color: white;
+  border: 2px solid burlywood;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#completeBookList {
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#incompleteBookList > div:not(:last-child) {
+  border-bottom: 3px solid burlywood;
+}
+#incompleteBookList > div {
+  padding: 10px 15px;
+}
+
+#completeBookList > div {
+  padding: 10px 15px;
+}
+
+#completeBookList > div:not(:last-child) {
+  border-bottom: 3px solid green;
+}
